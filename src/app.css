@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+* {
+    box-sizing: border-box;
+}
+body  {
+    background: rgb(51,227,145);
+    background: -moz-linear-gradient(139deg, rgba(51,227,145,1) 0%, rgba(90,203,212,1) 100%);
+    background: -webkit-linear-gradient(139deg, rgba(51,227,145,1) 0%, rgba(90,203,212,1) 100%);
+    background: linear-gradient(139deg, rgba(51,227,145,1) 0%, rgba(90,203,212,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#33e391",endColorstr="#5acbd4",GradientType=1);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+
+    font-family: 'Roboto', serif;
+}
+
+.todoCard {
+    background-color: white;
+    box-shadow: 0 0 5px 2px rgba(0, 0, 0, .5);
+    border-radius: 8px;
+    padding: 1rem 1.5rem;
+    min-height: 350px;
+    display: flex;
+    flex-direction: column;
+}
+
+.todoTitle {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.todoCounter {
+    text-align: center;
+    margin: 0;
+}
+
+.todoList  {
+    flex: 1;
+    border-top: 1px solid rgba(0, 0, 0, .5);
+    border-bottom: 1px solid rgba(0, 0, 0, .5);
+    margin-top: 5px;
+}
+
+.addTodoForm {
+    padding: 0;
+    margin: 5px 0;
+}
+
+.addTodoForm > input {    
+    border: 1px solid rgba(0, 0, 0, .5);
+    padding: 0.2em;
+    border-right: 0;
+    margin: 0;
+    outline: 0;
+}
+
+.addTodoForm > button {
+    background-color: rgba(51,227,145,1);
+    border: 1px solid rgba(0, 0, 0, .5);
+    outline: none;
+    padding: 0.2em 0.5em;
+}
+.addTodoForm + button {
+    background-color: rgba(90,203,212,1);
+    border: 1px solid rgba(0, 0, 0, .5);
+    outline: 0;
+    padding: 3px 10px;
+    width: 130px;
+    margin: 0 auto;
+}
+.addTodoForm > button:hover {
+    background-color: rgb(58, 252, 161);
+}
+
+.addTodoForm + button:hover {
+    background-color: rgb(109, 245, 255);   
+}
